@@ -1,12 +1,18 @@
 function reColor(step, color){
       $("#header").children().removeClass("acted");
+      //Resets ::after on all elements -- cannot alter w/ .css()
 
       $("#header div:nth-child(" + step + ")").addClass("acted");
+      //Finds button holder of current step, sets active for ::after recolor
 
       $("#header div").children().css({"color": "#F8F0E3", "border-color": "#F8F0E3"});
+      //Reset for persistent restyle on hover -- reverts to base condition onload and via reset/close
+
       $("#header div:nth-child(" + step + ")").children().css({"color": color, "border-color": color});
+      //Finds the child button of the current button holder step -- updates to parameter color
 
       $("#holder").css("border-color", color);
+      //Sets the border of the main text element in alignment w/ current parameter color
 }
 
 function output(number){
