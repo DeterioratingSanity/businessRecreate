@@ -1,17 +1,20 @@
 <head>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
     <script src="script.js">
     </script>
 </head>
 <body onload="output('6')">
     <div id="content" >
-        <p id="close" onclick="output('6'); reColor('6')">&times;</p>
+        <p id="close" onclick="output(6); reColor(6, '#F8F0E3')">&times;</p>
         <div id="header">
-            <div id="home" onclick="reColor('1'); output('1'); activeHome()" onmouseover="reColor('1'); output('1')"><button type="button" class="selector" id="homebutton">Home</button></div><br>
-            <div id="products" onclick="reColor('2'); output('2')" onmouseover="reColor('2'); output('2')"><button type="button" class="selector" id="prodbutton">Products</button></div><br>
-            <div id="reviews" onclick="reColor('3'); output('3')" onmouseover="reColor('3'); output('3')"><button type="button" class="selector" id="revbutton">Testimonials</button></div><br>
-            <div id="rates" onclick="reColor('4'); output('4')" onmouseover="reColor('4'); output('4')"><button type="button" class="selector" id="ratebutton">Rates</button></div><br>
-            <div id="contact" onclick="reColor('5'); output('5')" onmouseover="reColor('5'); output('5')"><button type="button" class="selector" id="contactbutton">Contact</button></div><br>
+            <div id="home"      onmouseover="reColor(1, 'red'); output(1)">    <button type="button" class="selector" id="homebutton">     Home          </button> </div>
+            <div id="products"  onmouseover="reColor(2, 'green'); output(2)">  <button type="button" class="selector" id="prodbutton">     Products      </button> </div>
+            <div id="reviews"   onmouseover="reColor(3, 'blue'); output(3)">   <button type="button" class="selector" id="revbutton">      Testimonials  </button> </div>
+            <div id="rates"     onmouseover="reColor(4, 'yellow'); output(4)"> <button type="button" class="selector" id="ratebutton">     Rates         </button> </div>
+            <div id="contact"   onmouseover="reColor(5, 'orange'); output(5)"> <button type="button" class="selector" id="contactbutton">  Contact       </button> </div>
         </div>
 
         <div id="holder">

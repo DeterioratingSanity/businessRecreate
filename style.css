@@ -63,6 +63,9 @@ body{
     right: -100em;
     transition:0.5s;
 }
+#home:hover > .selector:after{
+    background-color:red;
+}
 #home.acted > .selector:after{
     background-color:red;
 }
