@@ -1,4 +1,3 @@
-/*
 function reColor(color){
     if (color == 1) {
         document.getElementById('holder').style.borderColor = 'red';
@@ -145,4 +144,3 @@ function output(number){
         document.getElementById('text').innerHTML = "";
     }
 }
-*/
