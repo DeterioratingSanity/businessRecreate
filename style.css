@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    background-color:rgb(30,40,50);
+    transition:0.5s;
+}
+body{
+    margin:auto;
+}
+
+#close{
+    color:#F8F0E3;
+    padding:.25em .5em;
+    font-size:4em;
+    cursor:pointer;
+    display:inline;
+}
+#close:hover{
+    color:grey;
+}
+#header{
+    position:fixed;
+    top:27%;
+    left:15%;
+}
+.selector{
+    position:relative;
+    margin:10px;
+    min-width:200px;
+    aspect-ratio:1/.25;
+    border:2px solid #F8F0E3;
+    color:white;
+    font-size:1em;
+    cursor:pointer;
+}
+#home:hover > .selector{
+    color:red;
+    border-color: red;
+}
+#products:hover > .selector{
+    color:green;
+    border-color: green;
+}
+#reviews:hover > .selector{
+    color:blue;
+    border-color: blue;
+}
+#rates:hover > .selector{
+    color:yellow;
+    border-color: yellow;
+}
+#contact:hover > .selector{
+    color:orange;
+    border-color: orange;
+}
+
+.selector::after{
+    content: '';
+    position: absolute;
+    background-color: #F8F0E3;
+    height: 2px;
+    top: 50%;
+    left: 100%;
+    right: -100em;
+    transition:0.5s;
+}
+#home.acted > .selector:after{
+    background-color:red;
+}
+#products:hover > .selector:after{
+    background-color:green;
+}
+#products.acted > .selector:after{
+    background-color:green;
+}
+#reviews:hover > .selector:after{
+    background-color:blue;
+}
+#reviews.acted > .selector:after{
+    background-color:blue;
+}
+#rates:hover > .selector:after{
+    background-color:yellow;
+}
+#rates.acted > .selector:after{
+    background-color:yellow;
+}
+#contact:hover > .selector:after{
+    background-color:orange;
+}
+#contact.acted > .selector:after{
+    background-color:orange;
+}
+
+#holder{
+    color:grey;
+    position:fixed;
+    top:10%;
+    left:40%;
+    background-color:#F8F0E3;
+    width:40%;
+    max-width:40%;
+    border:6px solid #F8F0E3;
+    aspect-ratio:1/1;
+}
+
+#holder::after{
+    content: '';
+    position: absolute;
+    background: rgb(30,40,50);
+    height: 100%;
+    top:0;
+    transition: 0.8s ease;
+    left: 100.8%;
+    right: -100em;
+}
+
+#title{
+    padding:2em 2em 0 2em;
+    font-weight:bold;
+    font-size:3em;
+    background-color:inherit;
+    text-align:center;
+    vertical-align:middle;
+}
+#text{
+    padding-top:0;
+    padding: 4em;
+    font-size:1.3em;
+    line-height:2;
+    background-color:inherit;
+    text-align:center;
+}
